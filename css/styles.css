@@ -1,0 +1,34 @@
+
+body{
+    background: url(../img/banner.jpeg);
+    color: rgb(252, 245, 245);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 480px;
+    position: relative;
+    background-size: 100%;
+    animation: movimiento 5s infinite linear alternate; 
+
+}
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+}
+p{
+    text-align: center;
+}
+.mision{
+    font-size: 20px;
+    
+}
+em strong{
+    text-shadow: 1px 1px 1px #000;
+}
