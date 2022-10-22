@@ -49,3 +49,24 @@ body{
 em strong{
     text-shadow: 1px 1px 1px #000;
 }
+/*Diferenciales*/
+.diferenciales h2{
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px rgb(175, 185, 119);
+}
+.diferenciales-list ul{
+    display:inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-right: 15%;
+    font-size: 15px;
+}
+.direfencial-img{
+    width: 50%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+}
