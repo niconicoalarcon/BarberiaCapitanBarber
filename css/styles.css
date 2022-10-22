@@ -1,14 +1,27 @@
 
 body{
-    background: url(../img/banner.jpeg);
     color: rgb(252, 245, 245);
     font-family: 'Roboto', sans-serif;
+    background: #000;
+
+}
+/*header*/
+.encabezado{
+    text-align: center;
+    text-shadow: 10px 5px 10px rgb(175, 185, 119);
+    font-size: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ccc;
+}
+/*portada*/
+.container-main{
+    background: url(../img/banner.jpeg);
     width: 100%;
     height: 480px;
     position: relative;
     background-size: 100%;
     animation: movimiento 5s infinite linear alternate; 
-
 }
 @keyframes movimiento{
     from{
@@ -16,14 +29,18 @@ body{
     }to{
         background-position: top right;
     }
+    
+}
+/*texto*/
+.container-text{
+    padding: 50px;
+    margin: auto;
+    
 }
 
-h1{
+.container-main p{
     text-align: center;
-    text-shadow: 1px 1px 1px #000;
-}
-p{
-    text-align: center;
+
 }
 .mision{
     font-size: 20px;
