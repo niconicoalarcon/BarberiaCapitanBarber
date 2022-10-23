@@ -44,7 +44,7 @@ nav a:hover{/*propiedad que captura el movimiento del mouse*/
 main{
     width: 940px;
     margin: 0 auto;
-    padding: 0 25%;
+    padding: 0 25%; /*acomoda el formulario en el centro*/
 }
 .formulario{
     margin:40px 0;
@@ -68,19 +68,41 @@ form label{
     margin: 0 0 20px;
     padding: 0px 10px;
 }
+select{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
 
 .botom{
+    width: 40%;
     display: block;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 15px 10px;
     margin: 10px 20px;
     color: white;
-    background: rgba(163,117,5,1);    
+    background: rgba(163,117,5,1); 
+    font-family: 'Roboto', sans-serif;
+    transition: 1s all;   /*tiempo en que tarda las transisiones en realizarse*/
+    cursor: pointer;
 }
 .botom:hover{
     background: rgb(17, 187, 57);
     color: white;
     text-decoration: none;
+    transform: scale(1.2); /*propiedad que hace que el boton crezca al pasar el mouse*/
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: rgba(163,117,5,1);
+    color: white;
+    font-weight: bold;
+}
+td, th{ /*estilos para las celdas de la tabla*/
+    border: 1px solid white;
+    padding: 18px 15px;
 }
 
 /*footer*/

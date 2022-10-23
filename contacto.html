@@ -25,20 +25,53 @@
     <main>
         <form class="formulario">
             <label for="name">Nombrer y Apellido</label>
-            <input type="text" id="name" class="input-block">
+            <input type="text" id="name" class="input-block" required>
             <label for="email">Email</label>
-            <input type="email" id="email" class="input-block"> 
+            <input type="email" id="email" class="input-block" required> 
             <label for="telefono">Teléfono</label>
-            <input type="text" class="input-block">
+            <input type="tel" class="input-block" required>
             <label for="mensaje">Mensaje</label>
             <textarea name="" id="mensaje" cols="70" rows="10" class="input-block"></textarea>
-            <p>¿Por que medio le gustaria que lo contactemos?</p>
-            <label for="radio-email"><input type="radio" name="contacto" value="email" class="input" id="radio-email">Email</label>
-            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" class="input" id="radio-telefono">Teléfono</label>
-            <label for="radio-wsp"><input type="radio" name="contacto" value="wsp" class="input" id="radio-wsp">Wsp</label>
-            <label for=""><input type="checkbox">¿Le gustaria recibir novedades?</label>
+            <fieldset>
+                <p>¿Por que medio le gustaria que lo contactemos?</p>
+                <label for="radio-email"><input type="radio" name="contacto" value="email" class="input" id="radio-email">Email</label>
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" class="input" id="radio-telefono">Teléfono</label>
+                <label for="radio-wsp"><input type="radio" name="contacto" value="wsp" class="input" id="radio-wsp">Wsp</label>
+                <label for=""><input type="checkbox">¿Le gustaria recibir novedades?</label>
+            </fieldset>
+            <div>
+                <p>Elija el horario en el que quiere ser atendido</p>
+            <select >
+                <option value="">Mañana</option>
+                <option value="">Tarde</option>
+                <option value="">Noche</option>
+            </select>
+            </div>
             <input type="submit" class="botom" value="Enviar Formulario">
         </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dias</th>
+                    <th>Horarios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>8hs a 21hs</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>8hs a 21hs</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>8hs a 21hs</td>
+                </tr>
+            </tbody>
+            
+        </table>
     </main>
     <footer class="footer">
         <img src="img/logo-blanco.png" alt="la imagen no pudo cargarse" class="img-footer">
