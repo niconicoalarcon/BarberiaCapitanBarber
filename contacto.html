@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-contacto.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <h1><img src="img/logo-blanco.png" alt="la imagen no cargo"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+        </div>
+        
+    </header>
+    <main>
+        <form class="formulario">
+            <label for="name">Nombrer y Apellido</label>
+            <input type="text" id="name" class="input-block">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-block"> 
+            <label for="telefono">Teléfono</label>
+            <input type="text" class="input-block">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="mensaje" cols="70" rows="10" class="input-block"></textarea>
+            <p>¿Por que medio le gustaria que lo contactemos?</p>
+            <label for="radio-email"><input type="radio" name="contacto" value="email" class="input" id="radio-email">Email</label>
+            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" class="input" id="radio-telefono">Teléfono</label>
+            <label for="radio-wsp"><input type="radio" name="contacto" value="wsp" class="input" id="radio-wsp">Wsp</label>
+            <label for=""><input type="checkbox">¿Le gustaria recibir novedades?</label>
+            <input type="submit" class="botom" value="Enviar Formulario">
+        </form>
+    </main>
+    <footer class="footer">
+        <img src="img/logo-blanco.png" alt="la imagen no pudo cargarse" class="img-footer">
+        <p class="copyright">&#169 Copyright Al³ Service 2022</p>
+    </footer>
+    
+</body>
+</html>
