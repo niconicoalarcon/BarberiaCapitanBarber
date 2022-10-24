@@ -7,15 +7,42 @@ body{
 
 }
 /*header*/
-.encabezado{
-    text-align: center;
-    text-shadow: 5px 5px 5px rgb(175, 185, 119);
-    font-size: 30px;
+header{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 3%, rgba(90,67,0,1) 86%, rgba(163,117,5,1) 96%);
+    padding: 20px 0;
+    
+}
+
+.container-header{
+    width: 940px;
+    position: relative; /*relativa a la posicion absoluta definida en el nav*/
+    margin: 0 auto;
+
+}
+/*Navegacion*/
+nav{
+    position:absolute;
+    top:110px;
+    right: 0;
+}
+nav li{
+    display:inline;
+    margin: 0 0 0 15px;
+    
+}
+
+nav a{
     text-transform: uppercase;
+    color: aliceblue;
     font-weight: bold;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    text-decoration: none;   
+}
+nav a:hover{/*propiedad que captura el movimiento del mouse*/
+    color:rgba(163,117,5,1);
+    text-decoration: underline;
 }
 /*portada*/
 .container-main{
@@ -36,40 +63,105 @@ body{
 }
 /*texto*/
 .container-text{
-    padding: 50px;
-    margin: auto;
+    padding: 50px 85px 135px 30px ;
+    margin: 0 auto;
+    border: 5px solid rgba(163,117,5,1);
+    border-radius: 20px;
+    clear: left; /*limpia el contenido flotante*/
+
     
 }
-
+.container-main h1{
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
 .container-main p{
     text-align: center;
+    
 
 }
 .mision{
     font-size: 20px;
+    padding: 10px;
     
 }
 em strong{
     text-shadow: 1px 1px 1px #000;
 }
+.utensilios{
+    width: 120px;
+    float:left; /*para que se ponga a la izquierda, es como que se creada una proyeccion*/
+    margin: 0 20px 20px 0;
+}
+/*mapa*/
+.mapa h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    padding: 40px;
+    text-shadow: 2px 2px 3px rgb(175, 185, 119);
+}
+.mapa-img{
+    width: 800px;
+    margin: 1em auto;
+}
 /*Diferenciales*/
+.diferenciales{
+    padding: 40px;
+}
+
 .diferenciales h2{
+    padding: 30px;
+    margin: 20px;
     text-align: center;
     font-size: 30px;
     text-shadow: 2px 2px 3px rgb(175, 185, 119);
 }
-.diferenciales-list ul{
-    display:inline-block;
+.contenido-diferenciales{
+    width: 640px;
+    padding: 0 20%;
+    margin:0 auto;
+    display: inline-block;
+}
+.diferenciales-list{
+    width: 40%;
+    display: inline-block;
     vertical-align: top;
-    width: 25%;
-    margin-right: 15%;
+}
+.items{
+    line-height: 1.5;
     font-size: 15px;
 }
+/*.items:first-child{
+    font-weight: bold;
+} pseudo clases para seleccionar elementos*/
+.items::before{/*pseudo elemento para agregar contenido al principio*/
+    content:"\27A5";
+}
 .direfencial-img{
-    width: 50%;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: aliceblue;
-    padding: 10px;
-    margin: 10px;
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px black;
+}
+.direfencial-img:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+/*video*/
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+/*footer*/
+.footer{
+    background: url(../img/bg.jpg);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyright{
+    font-size: 15px;
+    margin-top: 20px;
 }

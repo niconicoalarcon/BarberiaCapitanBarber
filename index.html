@@ -5,15 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barberia Cápitan Barber</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style-home.css">
 </head>
 <body>
-    <header class="encabezado">
-        <h1>Barbería Cápitan Barber</h1>
+    <header>
+        <div class="container-header">
+            <h1><img src="img/logo-blanco.png" alt="la imagen no cargo"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+        </div>
+        
     </header>
     <div class="container-main">
         <div class="container-text">
             <main>
+                <h1>Sobre la Barberia</h1>
+                <img class="utensilios" src="img/utensilios.jpg" alt="la imagen no pudo cargar">
                 <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Capitan Barber</strong> trae para el mercado lo mejor existente para su cabello y barba. Fundada en 2020, la Barbería InFashion ya se destaca en la ciudad y conquista nuevos clientes día a día.</p>
     <p class="mision"><em>Nuestra misión es: <strong>"Proporcionar estilo y calidad de vida a nuestros clientes a travez de la moda"</strong>.</em></p>
     <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p> 
@@ -21,18 +34,30 @@
         </div>
         
     </div>
-    <div class="diferenciales">
-        <h2>Diferenciales</h2>
-        <div class="diferenciales-list">
-                <ul>
-                    <li>Atención personalizada de los clientes</li>
-                    <li>Espacio diferenciado</li>
-                    <li>Locación</li>
-                    <li>Profresionales calificados</li>
-                </ul>
-                <img src="img/diferenciales.jpg" alt="la imagen no pudo cargar" class="direfencial-img">
-        </div>
-    </div>
+    <section class="mapa">
+        <h3>Nuestra Ubicacíon</h3>
+        <div class="mapa-img">
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.685480118517!2d-59.64583208634042!3d-29.144465982218556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eba9bb9d69fff%3A0x578878f53ae0b576!2sPlaza%2025%20De%20Mayo!5e0!3m2!1ses-419!2sar!4v1666578729327!5m2!1ses-419!2sar" width="800" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+        </div>
+    </section>
+    <section class="diferenciales">
+        <h2>Diferenciales</h2>
+        <div class="contenido-diferenciales">
+                <ul class="diferenciales-list">
+                    <li class="items">Atención personalizada de los clientes</li>
+                    <li class="items">Espacio diferenciado</li>
+                    <li class="items">Locación</li>
+                    <li class="items">Profresionales calificados</li>
+                </ul><img src="img/diferenciales.jpg" alt="la imagen no pudo cargar" class="direfencial-img">
+        </div>
+    </section>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/26ZLppNtvuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer class="footer">
+        <img src="img/logo-blanco.png" alt="la imagen no pudo cargarse" class="img-footer">
+        <p class="copyright">&#169 Copyright Al³ Service 2022</p>
+    </footer>
 </body>
 </html>
